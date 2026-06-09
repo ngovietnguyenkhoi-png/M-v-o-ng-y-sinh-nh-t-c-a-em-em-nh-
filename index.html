@@ -1,24 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Một điều dành cho em</title>
+<style>
+body{
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: white;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    max-width: 800px;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    line-height: 1.8;
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+h1{
+    text-align: center;
+}
+p{
+    margin-bottom: 18px;
+}
+</style>
 </head>
 <body>
-
 <div id="content"></div>
-
 <script>
 const unlockDate = new Date("2026-06-12T00:00:00");
-
 if (new Date() < unlockDate) {
-    document.getElementById("content").innerHTML =
-        "<h1>⏳ Chưa đến ngày mở</h1><p>Hãy quay lại vào 12/06/2026.</p>";
+    document.getElementById("content").innerHTML = `
+    <h1>⏳ Chưa đến ngày mở</h1>
+    <p style="text-align:center;">
+    Hãy quay lại vào ngày 12/06/2026 ❤️
+    </p>
+    `;
 } else {
-    document.getElementById("content").innerHTML =
-        "<h1>💌 Gửi em</h1><p>Anh có một điều muốn nói...</p>";
+    document.getElementById("content").innerHTML = `
+    <h1>🎂 Chúc Mừng Sinh Nhật Em ❤️</h1>
+    <p><strong>Em thương,</strong></p>
+    <p>
+    Đêm qua, khi anh đã ngủ, trái tim và lý trí lại ngồi đối diện nhau, nói chuyện về em.
+    </p>
+    <p>
+    Lý trí lên tiếng trước. Nó trải những năm tháng đã qua lên mặt bàn, chỉ vào những khoảng cách, những ngã rẽ chưa thành hình, những đoạn đường mà ngày mai vẫn còn phủ đầy sương. Rồi nó hỏi:
+    </p>
+    <p><em>— Tại sao vẫn là em?</em></p>
+    <p>
+    Trái tim im lặng rất lâu. Nó không lục lọi câu trả lời trong ký ức, cũng không tìm trong những lời hứa của tương lai. Nó chỉ nhìn ra ngoài cửa sổ.
+    </p>
+    <p>
+    Ngoài kia, mặt trăng vẫn lặng lẽ treo mình giữa khoảng không mà chưa từng hỏi liệu có ai ngước nhìn. Dòng sông vẫn miệt mài chảy về biển, chẳng cần biết hành trình ấy sẽ được nhớ đến hay lãng quên. Vì sao vẫn cháy giữa miền tối nhất của bầu trời, dù ánh sáng của chúng phải mất hàng nghìn năm mới chạm tới một ánh mắt.
+    </p>
+    <p>
+    Đến lúc ấy, trái tim mới hiểu. Những điều đẹp đẽ không tồn tại để được lý giải. Chúng tồn tại để khiến con người ta thấy cuộc đời này đáng sống hơn. Bởi người ta đâu đứng dưới bầu trời đầy sao để tính xem có bao nhiêu ánh sáng. Đâu giữ một bản nhạc bên mình vì đã hiểu hết từng nốt ngân.
+    </p>
+    <p>
+    Anh chưa từng yêu em vì em có thể xoa dịu được những băn khoăn của lý trí.
+    </p>
+    <p>
+    Anh yêu em vì giữa ngổn ngang những điều cần cân nhắc, em là điều duy nhất anh không nỡ cân đo.
+    </p>
+    <p>
+    Hôm nay là sinh nhật em. Anh không biết món quà nào có thể diễn tả hết những điều anh muốn nói, nên anh chỉ mong rằng tuổi mới sẽ mang đến cho em thật nhiều niềm vui, thật nhiều bình yên và những điều tốt đẹp nhất.
+    </p>
+    <p>
+    Cảm ơn em vì đã xuất hiện trong cuộc đời anh. Chúc em một tuổi mới luôn hạnh phúc, luôn rạng rỡ như cách em đã làm trái tim anh trở nên đặc biệt hơn mỗi ngày.
+    </p>
+    <p style="text-align:center; font-size:24px;">
+    ❤️ Chúc mừng sinh nhật em, cô gái anh yêu. ❤️
+    </p>
+    <p>
+    Yêu em rất nhiều.
+    </p>
+    <p>
+    <strong>Anh.</strong>
+    </p>
+    `;
 }
 </script>
-
 </body>
-</html>
+</ht
